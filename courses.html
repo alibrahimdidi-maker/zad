@@ -3,97 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ޒާދް އެކަޑެމީ - ކޯސްތައް</title>
+    <title>ކޯސްތައް - ޒާދް އެކަޑެމީ</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container nav-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Zaad Academy Logo">
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">ހޯމް</a></li>
-                    <li><a href="courses.html">ކޯސްތައް</a></li>
-                    <li><a href="news.html">ޚަބަރު</a></li>
-                    <li><a href="gallery.html">ގެލެރީ</a></li>
-                    <li><a href="index.html#contact">ގުޅުއްވުމަށް</a></li>
-                </ul>
-            </nav>
-            <div class="lang-switch">
-                <a href="#">English</a>
-                <a href="#">عربي</a>
-            </div>
-        </div>
-    </header>
+    <div class="top-bar"><div class="container top-inner"><div class="contact-info"><span><span class="phone-icon">📞</span> 9901550</span><span style="margin-right: 15px;">✉️ academyzaad@gmail.com</span></div><a href="login.html" class="top-login-btn">ލޮގިން</a></div></div>
+    <header class="main-header"><div class="container header-content"><a href="index.html"><img src="images/logo.png" alt="Logo" class="academy-logo"></a><h1 class="academy-title">ޒާދް އެކަޑެމީ</h1></div></header>
+    <nav class="main-nav"><div class="container"><ul class="top-level-menu"><li class="menu-item"><a href="index.html" class="menu-link">ހޯމް</a></li><li class="menu-item"><a href="courses.html" class="menu-link" style="background-color: rgba(0,0,0,0.2); border-bottom: 4px solid #cfaa5e;">ކޯސްތައް</a></li></ul></div></nav>
 
-    <section class="hero" style="padding: 80px 20px; height: auto;">
+    <section class="course-hero">
         <div class="container">
-            <h2>ކޯސްތައް</h2>
-            <p>ޒާދް އެކަޑެމީގައި މިވަގުތު ހިންގަމުންދާ ކޯސްތަކުގެ މަޢުލޫމާތު</p>
+            <span class="course-breadcrumb">ހޯމް > ކޯސްތައް</span>
+            <h1>އެމް.ކިޔު.އޭ އެޕްރޫވްޑް ކޯސްތައް</h1>
+            <p style="font-size: 18px; max-width: 600px;">ތިރީގައި މިވަނީ މޯލްޑިވްސް ކޮލިފިކޭޝަންސް އޮތޯރިޓީން ޒާދް އެކަޑެމީއަށް ހުއްދަދެއްވާފައިވާ ކޯސްތަކެވެ.</p>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <div class="course-grid">
-                
-                <div class="course-card">
-                    <div class="course-content">
-                        <h3>ޤުރްއާން ޓީޗިންގ</h3>
-                        <p>މި ކޯހަކީ ޤުރްއާން ކިޔަވައިދޭނެ މުދައްރިސުން ތަމްރީނުކުރުމަށް ހިންގާ ކޯހެކެވެ. ތަޖުވީދުގެ ހަމަތަކާއި އުނގަންނައިދިނުމުގެ ސައިކޮލޮޖީ ކިޔަވައިދެވޭނެއެވެ.</p>
-                        <a href="#" class="btn">އިތުރު މަޢުލޫމާތު</a>
-                    </div>
-                </div>
 
-                <div class="course-card">
-                    <div class="course-content">
-                        <h3>ޢަރަބި ބަސް</h3>
-                        <p>ޢަރަބި ބަހުން ވާހަކަ ދައްކަން ދަސްކޮށްދިނުމާއި، ގްރެމަރ އަދި ލިޔުންތެރިކަން ކުރިއެރުވުމަށް ޚާއްޞަ ކޯހެކެވެ.</p>
-                        <a href="#" class="btn">އިތުރު މަޢުލޫމާތު</a>
+            <div class="category-header"><div class="category-icon">📖</div><h2 class="category-title">ޤުރްއާނުގެ ދާއިރާ</h2></div>
+            <div class="mqa-card-grid">
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 1</span><h3 class="course-title">ސެޓްފިކެޓް 1 އިން ޤިރާތު</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">8 Weeks</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">20</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
                     </div>
-                </div>
-
-                <div class="course-card">
-                    <div class="course-content">
-                        <h3>އިމާމްކަމުގެ ކޯސް</h3>
-                        <p>މިސްކިތްތަކުގެ އިމާމުންނަށް ބޭނުންވާ ފިޤުހީ ޢިލްމާއި، ޚުޠުބާ ކިޔުމުގެ ހުނަރު އަދި ބަންގި ގޮވުމުގެ ހުނަރު.</p>
-                        <a href="#" class="btn">އިތުރު މަޢުލޫމާތު</a>
-                    </div>
-                </div>
-
-                <div class="course-card">
-                    <div class="course-content">
-                        <h3>ޖަނާޒާ ކޯސް</h3>
-                        <p>މައްޔިތާ ހިނެވުމާއި ކަފުންކުރުމާއި ވަޅުލުމުގެ ކަންކަން ޝަރުޢީ ހަމަތަކުގެ މަތިން ދަސްކޮށްދިނުން.</p>
-                        <a href="#" class="btn">އިތުރު މަޢުލޫމާތު</a>
-                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
                 </div>
                 
-                 <div class="course-card">
-                    <div class="course-content">
-                        <h3>ޝަރީޢާ ކޯސް</h3>
-                        <p>އިސްލާމީ ޝަރީޢަތުގެ އަސާސްތައް ދެނެގަތުމަށް ބޭނުންވާ ފަރާތްތަކަށް ޚާއްޞަ.</p>
-                        <a href="#" class="btn">އިތުރު މަޢުލޫމާތު</a>
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 2</span><h3 class="course-title">ސެޓްފިކެޓް 2 އިން ޤިރާތު</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">14 Weeks</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">38</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
                     </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
                 </div>
 
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 3</span><h3 class="course-title">ސެޓްފިކެޓް 3 އިން ޤިރާތު</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">26 Weeks</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">82</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 4</span><h3 class="course-title">އެޑްވާންސް ސެޓްފިކެޓް އިން ޤިރާތު</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">1 Year</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">129</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
             </div>
+
+            <div class="category-header"><div class="category-icon">🗣️</div><h2 class="category-title">ޢަރަބި ބަހުގެ ދާއިރާ</h2></div>
+            <div class="mqa-card-grid">
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 1</span><h3 class="course-title">ސެޓްފިކެޓް 1 އިން ޢަރަބިކް ލެންގުއޭޖް</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">8 Weeks</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">17</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 1</span><h3 class="course-title">ސެޓްފިކެޓް 1 އިން ޢަރަބިކް ފޯ ޓްރެވަލް & ޓޫރިޒަމް</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">8 Weeks</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">26</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 2</span><h3 class="course-title">ސެޓްފިކެޓް 2 އިން ޢަރަބިކް ލެންގުއޭޖް</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">13 Weeks</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">37</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 3</span><h3 class="course-title">ސެޓްފިކެޓް 3 އިން ޢަރަބިކް ލެންގުއޭޖް</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">15 Weeks</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">48</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 4</span><h3 class="course-title">އެޑްވާންސް ސެޓްފިކެޓް އިން ޢަރަބިކް ލެންގުއޭޖް</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">1 Year</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">126</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 5</span><h3 class="course-title">ޑިޕްލޮމާ އިން ޢަރަބިކް ލެންގުއޭޖް</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">1 Year</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">173</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+            </div>
+
+            <div class="category-header"><div class="category-icon">🕌</div><h2 class="category-title">އިމާމްކަމުގެ ދާއިރާ</h2></div>
+            <div class="mqa-card-grid">
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 1</span><h3 class="course-title">ސެޓްފިކެޓް 1 ފޯ އިމާމްސް</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">5 Weeks</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">20</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 2</span><h3 class="course-title">ސެޓްފިކެޓް 2 ފޯ އިމާމްސް</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">10 Weeks</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">38</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 3</span><h3 class="course-title">ސެޓްފިކެޓް 3 ފޯ އިމާމްސް</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">26 Weeks</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">102</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 4</span><h3 class="course-title">އެޑްވާންސް ސެޓްފިކެޓް ފޯ އިމާމްސް</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">1 Year</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">162</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 5</span><h3 class="course-title">ޑިޕްލޮމާ ފޯ އިމާމްސް</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">1 Year</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">153</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+            </div>
+
+            <div class="category-header"><div class="category-icon">⚰️</div><h2 class="category-title">ޖަނާޒާގެ ދާއިރާ</h2></div>
+            <div class="mqa-card-grid">
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 1</span><h3 class="course-title">ސެޓްފިކެޓް 1 އިން ރޫލްސް އޮފް ޖަނާޒާ</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">3 Weeks</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">12</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 2</span><h3 class="course-title">ސެޓްފިކެޓް 2 އިން ރޫލްސް އޮފް ޖަނާޒާ</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">10 Weeks</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">30</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 3</span><h3 class="course-title">ސެޓްފިކެޓް 3 އިން ރޫލްސް އޮފް ޖަނާޒާ</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">15 Weeks</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">45</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+            </div>
+
+            <div class="category-header"><div class="category-icon">🎓</div><h2 class="category-title">ޓީޗިންގ ދާއިރާ</h2></div>
+            <div class="mqa-card-grid">
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 5</span><h3 class="course-title">ޑިޕްލޮމާ އިން ޓީޗިންގ ޤުރްއާން</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">1 Year</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">174</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+
+                <div class="mqa-card">
+                    <div class="mqa-card-header"><span class="mnqf-badge">Level 5</span><h3 class="course-title">ޑިޕްލޮމާ އިން ޓީޗިންގ ޢަރަބިކް ލެންގުއޭޖް</h3></div>
+                    <div class="mqa-card-body">
+                        <div class="mqa-details"><div class="detail-item"><span class="detail-label">މުއްދަތު</span><span class="detail-value">1 Year</span></div><div class="detail-item"><span class="detail-label">ކްރެޑިޓް</span><span class="detail-value">166</span></div><div class="detail-item"><span class="detail-label">މޯޑް</span><span class="detail-value">Face to Face</span></div></div>
+                    </div>
+                    <div class="mqa-card-footer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="apply-btn-small">އެޕްލައި ކުރައްވާ</a></div>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <div class="footer-links" style="text-align: center;">
-                <p>ޒާދް އެކަޑެމީ</p>
+            <div class="footer-grid">
+                <div class="footer-col footer-about"><h3>ޒާދް އެކަޑެމީ</h3><p>އަޅުގަނޑުމެންގެ އަމާޒަކީ ޤުރްއާނާއި ސުންނަތުގެ އަލީގައި މުޖުތަމަޢު ހޭލުންތެރިކުރުމެވެ.</p></div>
+                <div class="footer-col footer-links"><h3>މުހިންމު ލިންކުތައް</h3><ul><li><a href="course_quran.html">ކޯސްތައް</a></li><li><a href="ilmee_udhares.html">ޢިލްމީ އުދަރެސް</a></li><li><a href="news.html">ޚަބަރު</a></li></ul></div>
+                <div class="footer-col footer-links"><h3>ގުޅުއްވުމަށް</h3><ul><li><a href="tel:9901550"><span class="phone-icon">📞</span> 9901550</a></li><li><a href="mailto:academyzaad@gmail.com">✉️ academyzaad@gmail.com</a></li></ul></div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Zaad Academy. All Rights Reserved.</p>
-            </div>
+            <div class="footer-bottom"><p>&copy; 2025 Zaad Academy. All Rights Reserved.</p></div>
         </div>
     </footer>
 

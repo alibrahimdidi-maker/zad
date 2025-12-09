@@ -3,89 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ޒާދް ލައިބްރަރީ</title>
+    <title>ލައިބްރަރީ - ޒާދް އެކަޑެމީ</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="top-bar">
-        <div class="container top-inner">
-            <div class="contact-info"><span>📞 3000000</span></div>
-            <div><a href="login.html" style="background: #cfaa5e; color: #000; padding: 2px 10px; border-radius: 4px; font-weight: bold;">ލޮގިން</a></div>
-        </div>
-    </div>
+    <div class="top-bar"><div class="container top-inner"><div class="contact-info"><span>📞 9901550</span></div><a href="login.html" class="top-login-btn">ލޮގިން</a></div></div>
+    <header class="main-header"><div class="container header-content"><a href="index.html"><img src="images/logo.png" alt="Logo" class="academy-logo"></a><h1 class="academy-title">ޒާދް އެކަޑެމީ</h1></div></header>
+    
+    <nav class="main-nav"><div class="container"><ul class="top-level-menu"><li class="menu-item"><a href="index.html" class="menu-link">ހޯމް</a></li><li class="menu-item"><a href="library.html" class="menu-link" style="border-bottom: 4px solid #cfaa5e;">ލައިބްރަރީ</a></li></ul></div></nav>
 
-    <header class="main-header">
-        <div class="container header-content">
-            <a href="index.html"><img src="images/logo.png" alt="Logo" class="academy-logo"></a>
-            <h1 class="academy-title">ޒާދް ލައިބްރަރީ</h1>
-            <span class="academy-subtitle">އިލްމީ ޚަޒާނާ</span>
-        </div>
-    </header>
-
-    <nav class="main-nav">
+    <section class="course-hero">
         <div class="container">
-            <ul class="top-level-menu">
-                <li class="menu-item"><a href="index.html" class="menu-link">ހޯމް</a></li>
-                <li class="menu-item">
-                    <a href="courses.html" class="menu-link">ކޯސްތައް ▼</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="course_quran.html">ޤުރްއާން ޓީޗިންގ</a></li>
-                        <li><a href="course_arabic.html">ޢަރަބި ބަސް</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item"><a href="library.html" class="menu-link" style="border-bottom: 4px solid #cfaa5e;">ލައިބްރަރީ</a></li>
-                <li class="menu-item"><a href="#contact" class="menu-link" style="color: #cfaa5e;">ގުޅުއްވުމަށް</a></li>
-            </ul>
+            <span class="course-breadcrumb">ހޯމް > ލައިބްރަރީ</span>
+            <h1>ޒާދް ޑިޖިޓަލް ލައިބްރަރީ</h1>
+            <p>އެންމެ ފަހުގެ އިސްލާމީ ފޮތްތަކާއި ޢިލްމީ ލިޔުންތައް.</p>
         </div>
-    </nav>
+    </section>
 
-    <section class="section">
+    <section class="section" style="background-color: #fdfdfd;">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 40px;">
-                <h2 style="color: #0b3d29;">ޕަބްލިކޭޝަންސް</h2>
-                <p>ތަޅުލެވިފައިވާ ލިޔުންތައް ކިޔުއްވުމަށް ލޮގިން ކުރައްވާ!</p>
+            
+            <div class="library-header-area">
+                <div class="library-search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" class="search-input" placeholder="ފޮތް، މުއައްލިފު ނުވަތަ މައުޟޫޢު ހޯއްދަވާ...">
+                </div>
             </div>
 
-            <div class="library-grid">
+            <h3 class="lib-section-title">📂 ކެޓަގަރީތައް</h3>
+            <div class="folder-grid">
+                <div class="folder-card">
+                    <div class="folder-icon">📁</div>
+                    <div class="folder-info"><h4 class="folder-name">ޤުރްއާން & ތަޖުވީދު</h4><span class="folder-count">12 ފައިލް</span></div>
+                </div>
+                <div class="folder-card">
+                    <div class="folder-icon">📁</div>
+                    <div class="folder-info"><h4 class="folder-name">ފިޤުހު & ޙަދީޘް</h4><span class="folder-count">8 ފައިލް</span></div>
+                </div>
+                <div class="folder-card">
+                    <div class="folder-icon">📁</div>
+                    <div class="folder-info"><h4 class="folder-name">ޢަރަބި ބަސް</h4><span class="folder-count">5 ފައިލް</span></div>
+                </div>
+                <div class="folder-card">
+                    <div class="folder-icon">📁</div>
+                    <div class="folder-info"><h4 class="folder-name">ޢާއްމު މައުލޫމާތު</h4><span class="folder-count">3 ފައިލް</span></div>
+                </div>
+            </div>
+
+            <h3 class="lib-section-title">📚 އެންމެ ފަހުން އިތުރުކުރެވުނު ފޮތްތައް</h3>
+            <div class="resource-grid">
                 
-                <div class="pub-card">
-                    <div class="pub-img" style="background-color: #0b3d29;">📖</div>
-                    <div class="pub-info">
-                        <span class="pub-type">މަޖައްލާ (ހިލޭ)</span>
-                        <h3 class="pub-title">ޒާދް މަޖައްލާ - ވޮލިއުމް 1</h3>
-                        <p style="font-size: 13px; color: #666; margin-bottom: 15px;">އާންމުކޮށް ހުޅުވާލެވިފައިވާ މަޖައްލާއެއް.</p>
-                        <a href="#" class="read-btn">ކިޔުއްވާ</a>
+                <div class="modern-book-card">
+                    <div class="book-thumb">
+                        <span class="file-type-badge">PDF</span>
+                        <div class="book-icon-large">📖</div>
+                    </div>
+                    <div class="book-content">
+                        <h4 class="book-title-mod">ތަޖުވީދު މަގު</h4>
+                        <span class="book-meta-mod">މުއައްލިފު: އަލްއުސްތާޛް މުޙައްމަދު ރަޝީދު</span>
+                        <div class="book-btn-group">
+                            <a href="books/tajweed.pdf" target="_blank" class="lib-btn lib-btn-view">ކިޔުއްވާ</a>
+                            <a href="books/tajweed.pdf" download class="lib-btn lib-btn-download">ޑައުންލޯޑް</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="pub-card locked-item">
-                    <div class="pub-img" style="background-image: url('images/hero-bg.jpg');"></div>
-                    <div class="pub-info">
-                        <span class="pub-type">ފޮތް (ޕްރިމިއަމް)</span>
-                        <h3 class="pub-title">އިސްލާމީ ތާރީޚް - ބަޔާން</h3>
-                        <p style="font-size: 13px; color: #666; margin-bottom: 15px;">މި ފޮތް ކިޔުއްވުމަށް މެމްބަރަކަށް ވެލައްވާ.</p>
-                        <a href="login.html" class="subscribe-btn">🔒 ސަބްސްކްރައިބް</a>
+                <div class="modern-book-card">
+                    <div class="book-thumb">
+                        <span class="file-type-badge">PDF</span>
+                        <div class="book-icon-large">🕌</div>
+                    </div>
+                    <div class="book-content">
+                        <h4 class="book-title-mod">ނަމާދުގެ ފިޤުހު</h4>
+                        <span class="book-meta-mod">މުއައްލިފު: ޒާދް އެކަޑެމީ</span>
+                        <div class="book-btn-group">
+                            <a href="books/fiqh.pdf" target="_blank" class="lib-btn lib-btn-view">ކިޔުއްވާ</a>
+                            <a href="books/fiqh.pdf" download class="lib-btn lib-btn-download">ޑައުންލޯޑް</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="pub-card locked-item">
-                    <div class="pub-img" style="background-color: #333;">⚖️</div>
-                    <div class="pub-info">
-                        <span class="pub-type">ދިރާސާ</span>
-                        <h3 class="pub-title">ޒަކާތުގެ ޒަމާނީ މައްސަލަތައް</h3>
-                        <p style="font-size: 13px; color: #666; margin-bottom: 15px;">މި ލިޔުން ކިޔުއްވުމަށް ލޮގިން ކުރައްވާ.</p>
-                        <a href="login.html" class="subscribe-btn">🔒 ސަބްސްކްރައިބް</a>
+                <div class="modern-book-card">
+                    <div class="book-thumb">
+                        <span class="file-type-badge">PDF</span>
+                        <div class="book-icon-large">🗣️</div>
+                    </div>
+                    <div class="book-content">
+                        <h4 class="book-title-mod">ޢަރަބި ބަސް - ލެވެލް 1</h4>
+                        <span class="book-meta-mod">މުއައްލިފު: ޑިޕާޓްމަންޓް އޮފް ޢަރަބިކް</span>
+                        <div class="book-btn-group">
+                            <a href="books/arabic_1.pdf" target="_blank" class="lib-btn lib-btn-view">ކިޔުއްވާ</a>
+                            <a href="books/arabic_1.pdf" download class="lib-btn lib-btn-download">ޑައުންލޯޑް</a>
+                        </div>
                     </div>
                 </div>
 
             </div>
+
+            <h3 class="lib-section-title" style="margin-top: 50px;">🌐 މުހިންމު ވެބްސައިޓްތައް</h3>
+            <div class="resource-grid">
+                
+                <div class="modern-book-card web-card">
+                    <div class="book-thumb">
+                        <span class="file-type-badge">WEB</span>
+                        <div class="book-icon-large">🌍</div>
+                    </div>
+                    <div class="book-content">
+                        <h4 class="book-title-mod">މަކްތަބަތުއް ޝާމިލާ</h4>
+                        <span class="book-meta-mod">އޮންލައިން ޢަރަބި ލައިބްރަރީ</span>
+                        <div style="margin-top: auto;">
+                            <a href="https://shamela.ws/" target="_blank" class="web-btn">ވެބްސައިޓަށް ވަޑައިގަންނަވާ 🔗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modern-book-card web-card">
+                    <div class="book-thumb">
+                        <span class="file-type-badge">WEB</span>
+                        <div class="book-icon-large">🏛️</div>
+                    </div>
+                    <div class="book-content">
+                        <h4 class="book-title-mod">ސަރުނަ ލައިބްރަރީ</h4>
+                        <span class="book-meta-mod">ދިވެހިރާއްޖޭގެ ޤައުމީ ޔުނިވަރސިޓީ</span>
+                        <div style="margin-top: auto;">
+                            <a href="https://saruna.mnu.edu.mv/" target="_blank" class="web-btn">ވެބްސައިޓަށް ވަޑައިގަންނަވާ 🔗</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
     <footer>
-        <div class="container" style="text-align: center;">
-            <p>&copy; 2025 Zaad Academy.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about"><h3>ޒާދް އެކަޑެމީ</h3><p>ނޭޝަނަލް ލައިބްރަރީ، މާލެ، ދިވެހިރާއްޖެ</p></div>
+                <div class="footer-col footer-links"><h3>ލިންކުތައް</h3><ul><li><a href="index.html">ހޯމް</a></li><li><a href="courses.html">ކޯސްތައް</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 Zaad Academy.</p></div>
         </div>
     </footer>
 
