@@ -5,23 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ޒާދް އެކަޑެމީ - ހޯމް</title>
     <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .royal-ad-section { width: 100%; margin-top: 40px; margin-bottom: 40px; }
+        .royal-board {
+            background: radial-gradient(circle at center, #0e4d35 0%, #052b1d 100%);
+            border-radius: 20px; padding: 50px 30px; text-align: center; color: #fff;
+            position: relative; overflow: hidden; border: 2px solid #cfaa5e;
+            box-shadow: 0 15px 40px rgba(11, 61, 41, 0.3);
+        }
+        .royal-board::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background-image: radial-gradient(#cfaa5e 1px, transparent 1px);
+            background-size: 20px 20px; opacity: 0.1;
+        }
+        .royal-content { position: relative; z-index: 2; }
+        .royal-badge {
+            background-color: #cfaa5e; color: #052b1d; padding: 5px 20px; border-radius: 50px;
+            font-family: 'Faruma'; font-weight: bold; font-size: 14px; display: inline-block; margin-bottom: 20px;
+        }
+        .royal-title {
+            font-family: 'Faruma', serif !important; font-size: 36px; font-weight: bold; color: #fff;
+            margin: 0 0 10px 0; text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        .royal-tagline { font-family: 'Faruma'; font-size: 20px; color: #e0f2f1; margin-bottom: 30px; }
+        .royal-date {
+            display: inline-block; border: 1px solid rgba(207, 170, 94, 0.5); padding: 10px 25px;
+            border-radius: 8px; background: rgba(0,0,0,0.2); font-size: 16px; color: #cfaa5e; margin-bottom: 30px;
+            font-family: 'Faruma';
+        }
+        .royal-btn {
+            background: linear-gradient(45deg, #cfaa5e, #e6c885, #cfaa5e); color: #052b1d !important;
+            padding: 15px 40px; font-family: 'Faruma'; font-weight: bold; font-size: 18px;
+            border-radius: 50px; display: inline-block; transition: all 0.4s ease; border: 2px solid #fff;
+        }
+        .royal-btn:hover { transform: translateY(-5px) scale(1.05); background: #fff; color: #cfaa5e !important; }
+        @media (max-width: 600px) { .royal-title { font-size: 24px; } .royal-tagline { font-size: 16px; } }
+    </style>
 </head>
+
+<script>
+    // Get the current year using the built-in Date object
+    var currentYear = new Date().getFullYear(); 
+    
+    // Find the HTML element with the id "currentYear" and set its innerHTML
+    document.getElementById("currentYear").innerHTML = currentYear; 
+</script>
+
 <body>
 
     <div class="top-bar">
         <div class="container top-inner">
             <div class="contact-info">
-                <span><span class="phone-icon">📞</span> 9901550</span>
+                <span><span class="phone-icon">📞</span> 9901550 (960)</span>
                 <span style="margin-right: 15px;">✉️ academyzaad@gmail.com</span>
             </div>
             <div style="display: flex; align-items: center; gap: 10px;">
                 <a href="login.html" class="top-login-btn">ލޮގިން</a>
-                <span style="color: rgba(255,255,255,0.3);">|</span>
-                <div style="display: flex; gap: 15px; align-items: center;">
-                    <a href="index_en.html" style="text-decoration: none; color: #fff; font-size: 13px;">🇬🇧 English</a>
-                    <a href="index_ar.html" style="text-decoration: none; color: #fff; font-size: 13px;">🇸🇦 عربي</a>
-                    <span style="color: #cfaa5e; font-weight: bold; font-size: 13px; cursor: default;">🇲🇻 ދިވެހި</span>
-                </div>
+                <a href="index_en.html" style="color: #fff; font-size: 13px;">English</a>
+                <a href="index_ar.html" style="color: #fff; font-size: 13px;">عربي</a>
             </div>
         </div>
     </div>
@@ -43,35 +85,16 @@
                     <a href="courses.html" class="menu-link">ކޯސްތައް ▼</a>
                     <ul class="dropdown-menu">
                         <span class="dropdown-header">ޤުރްއާނުގެ ދާއިރާ</span>
-                        <li><a href="courses.html">ސެޓްފިކެޓް 1 އިން ޤުރްއާން</a></li>
-                        <li><a href="courses.html">ސެޓްފިކެޓް 2 އިން ޤުރްއާން</a></li>
-                        <li><a href="courses.html">ސެޓްފިކެޓް 3 އިން ޤުރްއާން</a></li>
+                        <li><a href="courses.html">ސެޓްފިކެޓް 1, 2, 3 އިން ޤުރްއާން</a></li>
                         <li><a href="courses.html">އެޑްވާންސް ސެޓްފިކެޓް އިން ޤުރްއާން</a></li>
-                        <li><a href="courses.html">ޑިޕްލޮމާ އިން ޤުރްއާން އެންޑް ޤިރާތު</a></li>
-                        <li><a href="courses.html">ބެޗެލަރސް އޮފް ޤުރްއާން</a></li>
-
+                        <li><a href="courses.html">ޑިޕްލޮމާ އިން ޤުރްއާން</a></li>
                         <span class="dropdown-header">ޢަރަބި ބަހުގެ ދާއިރާ</span>
-                        <li><a href="courses.html">ސެޓްފިކެޓް 1 އިން ޢަރަބިކް</a></li>
-                        <li><a href="courses.html">ސެޓްފިކެޓް 2 އިން ޢަރަބިކް</a></li>
-                        <li><a href="courses.html">ސެޓްފިކެޓް 3 އިން ޢަރަބިކް</a></li>
+                        <li><a href="courses.html">ސެޓްފިކެޓް 1, 2, 3 އިން ޢަރަބިކް</a></li>
                         <li><a href="courses.html">އެޑްވާންސް ސެޓްފިކެޓް އިން ޢަރަބިކް</a></li>
-                        <li><a href="courses.html">ޑިޕްލޮމާ އިން ޢަރަބިކް</a></li>
-
+                        <li><a href="courses.html">ޑިޕްލޮމާ އިން ޓީޗިންގ، ޑިޕްލިމާއިން ޢަރަބިކް</a></li>
                         <span class="dropdown-header">އިމާމްކަމުގެ ދާއިރާ</span>
-                        <li><a href="courses.html">ސެޓްފިކެޓް 1 ފޯ އިމާމްސް</a></li>
-                        <li><a href="courses.html">ސެޓްފިކެޓް 2 ފޯ އިމާމްސް</a></li>
-                        <li><a href="courses.html">ސެޓްފިކެޓް 3 ފޯ އިމާމްސް</a></li>
-                        <li><a href="courses.html">އެޑްވާންސް ސެޓްފިކެޓް ފޯ އިމާމްސް</a></li>
+                        <li><a href="courses.html">ސެޓްފިކެޓް 1, 2, 3 ،އެޑްވާންސް ސެޓްފިކެޓް ފޯ އިމާމްސް</a></li>
                         <li><a href="courses.html">ޑިޕްލޮމާ ފޯ އިމާމްސް</a></li>
-
-                        <span class="dropdown-header">ޖަނާޒާގެ ދާއިރާ</span>
-                        <li><a href="courses.html">ސެޓްފިކެޓް 1 އިން ޖަނާޒާ</a></li>
-                        <li><a href="courses.html">ސެޓްފިކެޓް 2 އިން ޖަނާޒާ</a></li>
-                        <li><a href="courses.html">ސެޓްފިކެޓް 3 އިން ޖަނާޒާ</a></li>
-
-                        <span class="dropdown-header">ޓީޗިންގ ދާއިރާ</span>
-                        <li><a href="courses.html">ޑިޕްލޮމާ އިން ޓީޗިންގ ޤުރްއާން</a></li>
-                        <li><a href="courses.html">ޑިޕްލޮމާ އިން ޓީޗިންގ ޢަރަބިކް</a></li>
                     </ul>
                 </li>
 
@@ -80,19 +103,35 @@
                     <ul class="dropdown-menu">
                         <li><a href="ilmee_udhares.html">ފިޤުހީ މައްސަލަތައް</a></li>
                         <li><a href="ilmee_udhares.html">ޢަރަބި ބަހުގެ ޢިލްމު</a></li>
-                        <li><a href="ilmee_udhares.html">ޤުރްއާނާއި ޙަދީޘް</a></li>
-                        <li><a href="ilmee_udhares.html">ޒަމާނީ މައްސަލަތައް</a></li>
-                        <li><a href="ilmee_udhares.html">ތާރީޚާއި ސިޔަރަތު</a></li>
                     </ul>
                 </li>
-                <li class="menu-item"><a href="classes.html" class="menu-link">ޚާއްޞަ ކްލާސްތައް</a></li>
-                <li class="menu-item"><a href="downloads_calendar.html" class="menu-link">ޑައުންލޯޑްސް ▼</a>
-                    <ul class="dropdown-menu"><li><a href="#">ކަލަންޑަރު</a></li><li><a href="#">އެކަޑެމިކް ޤަވާޢިދު</a></li><li><a href="#">އިދާރީ ޤަވާޢިދު</a></li></ul>
+
+                <li class="menu-item">
+                    <a href="classes.html" class="menu-link">ޚާއްޞަ ކްލާސްތައް ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="classes.html#tilawah">ޤުރްއާން ތިލާވާ</a></li>
+                        <li><a href="classes.html#hifz">ޤުރްއާން ޙިފްޒް</a></li>
+                        <li><a href="classes.html#janazah">ޖަނާޒާ ވޯކްޝޮޕް</a></li>
+                        <li><a href="classes.html#arabic">ޢަރަބި ކްލާސްތައް</a></li>
+                        <li><a href="classes.html#arabic">ބޮޑެތި މީހުންގެ ޢަރަބި ކްލާސްތައް</a></li>
+                        <li><a href="classes.html#arabic">ކުޑަކުދިންނަށް ޚާއްޞަ ޢަރަބި ކްލާސްތައް</a></li>
+                        <li><a href="classes.html#arabic">ޙައްޖާއި ޢުމްރާ އަށް ދާ މީހުންގެ ޚާއްޞަ ޢަރަބި ކްލާސްތައް</a></li>
+                        <li><a href="classes.html#thesis">ތީސިސް ލިޔުމުގެ ފަންނު</a></li>
+                    </ul>
                 </li>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">ޑައުންލޯޑްސް ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="downloads_calendar.html">📅 ކަލަންޑަރު</a></li>
+                        <li><a href="downloads_academic_rules.html">📜 ޤަވާޢިދުތައް</a></li>
+                        <li><a href="downloads.html">📝 ފޯމުތައް</a></li>
+                    </ul>
+                </li>
+                
                 <li class="menu-item"><a href="library.html" class="menu-link">ލައިބްރަރީ</a></li>
                 <li class="menu-item"><a href="news.html" class="menu-link">ޚަބަރު</a></li>
-                <li class="menu-item"><a href="gallery.html" class="menu-link">ގެލެރީ</a></li>
-                <li class="menu-item"><a href="contact.html" class="menu-link" style="color: #cfaa5e;">ގުޅުއްވުމަށް</a></li>
+                <li class="menu-item"><a href="contact.html" class="menu-link">ގުޅުއްވުމަށް</a></li>
             </ul>
         </div>
     </nav>
@@ -100,107 +139,117 @@
     <div class="container main-layout">
         
         <aside class="sidebar right-sidebar">
-            <a href="login.html" class="sidebar-login-btn">🔑 އޮންލައިން ލަރނިންގ ލޮގިން</a>
-            
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeIEMSRrnEjxMCH8hhAPqdb_ekxMSF2LTqCRiFE6peTaHtmUQ/viewform?usp=sf_link" target="_blank" class="sidebar-apply-btn">
-                📝 ޚާއްޞަ ކްލާސްތަކަށް ރެޖިސްޓްރީވުމަށް
-            </a>
-
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="sidebar-mqa-btn">
-                🎓 Apply for MQA-Approved Courses
-            </a>
-
-            <h3 class="sidebar-title">ޒާދް ގްރޫޕް</h3>
-            <a href="#" class="sidebar-link" style="background-color: #e0f2f1; border-right-color: #00695c;"><strong>🕋 ޒާދް އަލް ޙައްޖު ވަލް ޢުމްރާ</strong></a>
-            <a href="#" class="sidebar-link"><strong>ޒާދް ޓެލެންޓް މެނޭޖްމެންޓް</strong></a>
-            <a href="#" class="sidebar-link"><strong>ޒާދް ޕްރިންޓް އެންޑް ޕަބްލިކޭޝަން</strong></a>
-            <a href="#" class="sidebar-link" style="border-right-color: #cfaa5e;"><strong>އާރު އެކްސްޕްރެސް</strong></a>
-            
-            <h3 class="sidebar-title" style="margin-top: 30px;">ބޭރުގެ ޔުނިވަރސިޓީތައް</h3>
-            <a href="https://iu.edu.sa/" target="_blank" class="sidebar-link">މަދީނާ ޔުނިވަރސިޓީ</a>
-            <a href="http://www.azhar.edu.eg/" target="_blank" class="sidebar-link">އަޒްހަރު ޔުނިވަރސިޓީ</a>
-            <a href="https://www.mediu.edu.my/" target="_blank" class="sidebar-link">އަލް-މަދީނާ އިންޓަރނޭޝަނަލް</a>
-            <a href="https://www.iium.edu.my/" target="_blank" class="sidebar-link">އައި.އައި.ޔޫ.އެމް</a>
+             <a href="login.html" class="sidebar-login-btn">🔑 އޮންލައިން ލަރނިންގ ލޮގިން</a>
+             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeIEMSRrnEjxMCH8hhAPqdb_ekxMSF2LTqCRiFE6peTaHtmUQ/viewform?usp=sf_link" target="_blank" class="sidebar-apply-btn">📝 ޚާއްޞަ ކްލާސްތަކަށް ރެޖިސްޓްރީވުމަށް</a>
+             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdq57JwWpVI1ZgcfiqN3zKUni38lO_iqruTHMPFzojYYzxzZQ/viewform?usp=sf_link" target="_blank" class="sidebar-mqa-btn">🎓 Apply for MQA-Approved Courses</a>
+             <h3 class="sidebar-title">ޒާދް ގްރޫޕް</h3><a href="#" class="sidebar-link"><strong>🕋 ޒާދް އަލް ޙައްޖު ވަލް ޢުމްރާ</strong></a>
+             <h3 class="sidebar-title" style="margin-top: 30px;">ބޭރުގެ ޔުނިވަރސިޓީތައް</h3><a href="#" class="sidebar-link">މަދީނާ ޔުނިވަރސިޓީ</a>
         </aside>
-
+        
         <main class="middle-column">
-            <div class="slideshow-container" style="display: block; height: 350px;">
-                <div style="width: 100%; height: 100%; background: linear-gradient(rgba(11, 61, 41, 0.9), rgba(11, 61, 41, 0.8)), url('images/hero-bg.jpg'); background-size: cover; background-position: center; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 5px solid #cfaa5e; box-sizing: border-box; padding: 20px;">
-                    <h2 style="color: #cfaa5e; font-family: 'Amiri', serif; font-size: 42px; margin-bottom: 20px; text-shadow: 2px 2px 4px #000; line-height: 1.4;">وَتَزَوَّدُوا فَإِنَّ خَيْرَ الزَّادِ التَّقْوَىٰ</h2>
-                    <p style="color: #fff; font-family: 'Faruma'; font-size: 24px; line-height: 1.8; max-width: 90%; text-shadow: 1px 1px 2px #000;">"އަދި ތިޔަބައިމީހުން ކޮއްތު ހޯދާށެވެ! ފަހެ، ހަމަކަށަވަރުން، އެންމެ ހެޔޮވެގެންވާ ކޮއްތަކީ ތަޤްވާވެރިކަމެވެ."</p>
+            <div class="slideshow-container">
+                <div style="width: 100%; height: 100%; background: linear-gradient(rgba(11, 61, 41, 0.9), rgba(11, 61, 41, 0.8)), url('images/hero-bg.jpg'); background-size: cover; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 5px solid #cfaa5e;">
+                    
+                    <h2 style="color: #cfaa5e; font-family: 'Amiri', serif !important; font-size: 25px; margin-bottom: 25px;">﴿وَتَزَوَّدُوا فَإِنَّ خَيْرَ الزَّادِ التَّقْوَىٰ﴾</h2>
+                    <p style="color: #fff; font-family: 'Faruma'; font-size: 20px;">"އަދި ތިޔަބައިމީހުން ކޮއްތު ހޯދާށެވެ! ފަހެ، ހަމަކަށަވަރުން، އެންމެ ހެޔޮވެގެންވާ ކޮއްތަކީ ތަޤްވާވެރިކަމެވެ."</p>
                     <div style="width: 80px; height: 3px; background: #cfaa5e; margin-top: 25px;"></div>
                 </div>
             </div>
+
             <div class="hero-small">
-                <h2 style="font-size: 36px; margin-bottom: 10px; color: #cfaa5e;">އިސްލާމީ ޢިލްމުގެ އުސްމިންތަކަށް</h2>
-                <p>ޒާދް އެކަޑެމީ - ޢިލްމާއި ހުނަރުގެ މަރުކަޒު</p>
-                <a href="course_quran.html" class="btn" style="padding: 8px 20px; font-size: 14px;">ކޯސްތައް ބެއްލެވުމަށް</a>
+                <h2 style="font-size: 36px; color: #cfaa5e;">އިސްލާމީ ޢިލްމުގެ އުސްމިންތަކަށް</h2>
+                <a href="course_quran.html" class="btn">ކޯސްތައް ބެއްލެވުމަށް</a>
             </div>
+
             <div style="background:#fff; padding:30px; border-radius:8px; border:1px solid #eee; text-align:center;">
                 <h3 style="color:#0b3d29; margin-bottom:15px;">އެކަޑެމީއަށް މަރުޙަބާ</h3>
                 <p>ޒާދް އެކަޑެމީއަކީ ދިވެހިރާއްޖޭގައި އިސްލާމީ ތަޢުލީމު ފުޅާކުރުމަށާއި، ހުނަރުވެރި ޒުވާނުން ބިނާކުރުމަށް އުފައްދާފައިވާ މަރުކަޒެކެވެ.</p>
             </div>
         </main>
-
+        
         <aside class="sidebar left-sidebar">
-            <div style="margin-bottom: 30px;">
-                <h3 class="sidebar-title">ކަލަންޑަރު</h3>
-                <div class="calendar-widget">
-                    <div class="calendar-header">ޑިސެމްބަރު 2025</div>
-                    <div class="calendar-grid" style="background:#fff;">
-                        <div>އާދީ</div><div>ހޯމަ</div><div>އަން</div><div>ބުދަ</div><div>ބުރާ</div><div>ހުކު</div><div>ހޮނި</div>
-                        <div class="cal-day">1</div><div class="cal-day">2</div><div class="cal-day">3</div><div class="cal-day">4</div><div class="cal-day">5</div><div class="cal-day">6</div><div class="cal-day">7</div>
-                        <div class="cal-day">8</div><div class="cal-day cal-today">9</div><div class="cal-day">10</div><div class="cal-day">11</div><div class="cal-day">12</div><div class="cal-day">13</div><div class="cal-day">14</div>
-                    </div>
-                </div>
-            </div>
-
-            <div style="margin-bottom: 30px;">
-                <h3 class="sidebar-title">ޒާދް އެކަޑެމީން ހިންގާ ކްލާސްތައް</h3>
-                <div style="background: #fff; padding: 15px; border: 1px solid #eee; border-radius: 5px; text-align: center;">
-                    <p style="font-size: 13px; color: #555; margin-bottom: 10px;">ކުރު މުއްދަތުގެ ޚާއްޞަ ކްލާސްތަކާއި ޓިއުޝަން</p>
-                    <a href="classes.html" class="btn" style="width: 100%; box-sizing: border-box; font-size: 13px; padding: 8px;">ކްލާސްތަކުގެ ތަފްޞީލު ބެއްލެވުމަށް</a>
-                </div>
-            </div>
-
-            <div style="margin-bottom: 30px;"><h3 class="sidebar-title">އާ ޕްރޮގްރާމްތައް</h3><div class="ad-box"><div style="text-align: center;">📢 އިޝްތިހާރު</div></div></div>
-            
-            <div style="margin-bottom: 30px;"><h3 class="sidebar-title">މުހިންމު މުއައްސަސާތައް</h3>
-                <a href="https://www.islamicaffairs.gov.mv/" target="_blank" class="sidebar-link">އިސްލާމިކް މިނިސްޓްރީ</a>
-                <a href="https://www.moe.gov.mv/" target="_blank" class="sidebar-link">އެޑިޔުކޭޝަން މިނިސްޓްރީ</a>
-                <a href="https://www.mqa.gov.mv/" target="_blank" class="sidebar-link">އެމް.ކިޔު.އޭ</a>
-                <a href="https://mohe.gov.mv/" target="_blank" class="sidebar-link">ހަޔަރ އެޑިޔުކޭޝަން</a>
-                <a href="https://www.ium.edu.mv/" target="_blank" class="sidebar-link">އިސްލާމީ ޔުނިވަރސިޓީ</a>
-                <a href="https://mnu.edu.mv/" target="_blank" class="sidebar-link">ޤައުމީ ޔުނިވަރސިޓީ</a>
-            </div>
-            <div><h3 class="sidebar-title">ޒިޔާރަތްކުރި މީހުން</h3><div class="visitor-counter">12,584</div></div>
+             <div class="calendar-widget">
+                 <div class="calendar-header">ޑިސެމްބަރު 2025</div>
+                 <div class="calendar-grid">
+                     <div class="cal-day-header">އާދީ</div><div class="cal-day-header">ހޯމަ</div><div class="cal-day-header">އަން</div><div class="cal-day-header">ބުދަ</div><div class="cal-day-header">ބުރާ</div><div class="cal-day-header">ހުކު</div><div class="cal-day-header">ހޮނި</div>
+                     
+                     <div></div> <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+                     
+                     <div>7</div><div>8</div><div>9</div><div class="cal-today">10</div><div>11</div><div>12</div><div>13</div>
+                     
+                     <div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div>
+                     
+                     <div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div>
+                     
+                     <div>28</div><div>29</div><div>30</div><div>31</div><div></div><div></div><div></div>
+                 </div>
+             </div>
+             
+             <div style="margin-top: 30px;"><h3 class="sidebar-title">އާ ޕްރޮގްރާމްތައް</h3><div class="ad-box"><div style="text-align: center;">📢 ޢަރަބި ޓިއުޝަން ކްލާސްތައް</div></div></div>
+             
+             <div style="margin-top: 30px;">
+                <h3 class="sidebar-title">މުހިންމު މުއައްސަސާތައް</h3>
+                <a href="#" class="sidebar-link">އިސްލާމިކް މިނިސްޓްރީ</a>
+                <a href="#" class="sidebar-link">އެޑިޔުކޭޝަން މިނިސްޓްރީ</a>
+                <a href="#" class="sidebar-link">އެމް.ކިޔު.އޭ</a>
+             </div>
+             
+             <div><h3 class="sidebar-title">ޒިޔާރަތްކުރި މީހުން</h3><div class="visitor-counter">12,584</div></div>
         </aside>
+    </div>
+
+    <div class="container">
+        <div class="royal-ad-section">
+            <div class="royal-board">
+                <div class="royal-content">
+                    <span class="royal-badge">އައު ޕްރޮގްރާމް</span>
+                    <h2 class="royal-title">ޖަނަވަރީ 2026</h2>
+                    <p class="royal-tagline">"ޤުރްއާން ޙިފްޡްކޮށްދޭ ޕްރޮގްރާމް."</p>
+                    <div class="royal-date">📅 ފެށޭ ތާރީޚް: 01 ޖަނަވަރީ 2026</div>
+                    <br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeIEMSRrnEjxMCH8hhAPqdb_ekxMSF2LTqCRiFE6peTaHtmUQ/viewform?usp=sf_link" target="_blank" class="royal-btn">
+                        އަވަހަށް ޖާގަ ކަށަވަރުކުރައްވާ &leftarrow;
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col footer-about"><h3>ޒާދް އެކަޑެމީ</h3><p>އަޅުގަނޑުމެންގެ އަމާޒަކީ ޤުރްއާނާއި ސުންނަތުގެ އަލީގައި މުޖުތަމަޢު ހޭލުންތެރިކުރުމެވެ.</p></div>
-                <div class="footer-col footer-links"><h3>މުހިންމު ލިންކުތައް</h3><ul><li><a href="course_quran.html">ކޯސްތައް</a></li><li><a href="ilmee_udhares.html">ޢިލްމީ އުދަރެސް</a></li><li><a href="news.html">ޚަބަރު</a></li></ul></div>
+                <div class="footer-col footer-about"><h3>ޒާދް އެކަޑެމީ</h3><p>ނޭޝަނަލް ލައިބްރަރީ، މާލެ</p></div>
+                <div class="footer-col footer-links"><h3>މުހިންމު ލިންކުތައް</h3><ul><li><a href="course_quran.html">ކޯސްތައް</a></li><li><a href="news.html">ޚަބަރު</a></li></ul></div>
                 <div class="footer-col footer-links">
                     <h3>ގުޅުއްވުމަށް</h3>
-                    <ul>
-                        <li><a href="tel:9901550"><span class="phone-icon">📞</span> 9901550</a></li>
-                        <li><a href="mailto:academyzaad@gmail.com">✉️ academyzaad@gmail.com</a></li>
-                    </ul>
+                    <ul><li><a href="tel:9901550"><span class="phone-icon">📞</span> 9901550 (960)</a></li><li><a href="mailto:academyzaad@gmail.com">✉️ academyzaad@gmail.com</a></li></ul>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/ZaadAcademy" target="_blank" class="social-btn fb" title="Facebook">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
-                        </a>
-                        <a href="https://x.com/zaadacademy" target="_blank" class="social-btn x" title="X (Twitter)">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/></svg>
-                        </a>
+                        <a href="https://www.facebook.com/ZaadAcademy" target="_blank" class="social-btn fb"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg></a>
+                        <a href="https://x.com/zaadacademy" target="_blank" class="social-btn x"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/></svg></a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom"><p>&copy; 2025 Zaad Academy. All Rights Reserved.</p></div>
+            <div class="footer-bottom">
+    <footer>
+    <p>&copy; 2019-<script>document.write(new Date().getFullYear())</script> Zaad Academy. All rights reserved.</p>
+</footer>
         </div>
     </footer>
 
+
+
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

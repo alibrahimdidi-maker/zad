@@ -5,59 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ލޮގިން - ޒާދް އެކަޑެމީ</title>
     <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .login-wrapper-section { min-height: 85vh; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; padding: 40px 20px; }
+        .modern-login-card { background: #ffffff; width: 100%; max-width: 450px; padding: 50px 40px; border-radius: 20px; box-shadow: 0 20px 50px rgba(11, 61, 41, 0.15); text-align: center; border-top: 6px solid #0b3d29; }
+        .login-logo { width: 100px; height: auto; margin-bottom: 20px; }
+        .input-group { margin-bottom: 20px; text-align: right; }
+        .input-label { display: block; margin-bottom: 8px; font-size: 14px; font-weight: bold; }
+        .modern-input { width: 100%; padding: 15px; border: 2px solid #eee; border-radius: 10px; font-size: 16px; background: #fafafa; }
+        .btn-login-modern { width: 100%; padding: 15px; background: #0b3d29; color: #fff; border: none; border-radius: 50px; font-size: 18px; font-weight: bold; cursor: pointer; margin-top: 10px; }
+        .btn-login-modern:hover { background: #004d40; }
+    </style>
 </head>
 <body>
 
-    <div class="top-bar">
-        <div class="container top-inner">
-            <div class="contact-info"><span>📞 3000000</span></div>
-            <div><a href="index.html">އަނބުރާ ދިއުމަށް</a></div>
-        </div>
-    </div>
+    <div class="top-bar"><div class="container top-inner"><div class="contact-info"><span>📞 9901550</span></div><a href="index.html" style="color:#fff;">ހޯމް</a></div></div>
 
-    <header class="main-header">
-        <div class="container header-content">
-            <a href="index.html"><img src="images/logo.png" alt="Logo" class="academy-logo"></a>
-            <h1 class="academy-title">ޒާދް އެކަޑެމީ</h1>
-        </div>
-    </header>
+    <section class="login-wrapper-section">
+        <div class="modern-login-card">
+            <img src="images/logo.png" alt="Zaad Logo" class="login-logo">
+            <h2 style="color: #0b3d29;">ދަރިވަރުންގެ ޕޯޓަލް</h2>
+            <p style="color: #777; margin-bottom: 30px;">ތިރީގައިވާ މަޢުލޫމާތު ފުރިހަމަކުރައްވާ</p>
 
-    <section class="section" style="background-image: url('images/hero-bg.jpg'); background-size: cover; min-height: 80vh; display: flex; align-items: center; justify-content: center;">
-        <div class="container">
-            
-            <div class="login-wrapper">
-                <h2>މެމްބަރ ލޮގިން</h2>
-                <p style="font-size: 14px; color: #666; margin-bottom: 20px;">ޕަބްލިކޭޝަންތައް ކިޔުއްވުމަށް ލޮގިން ކުރައްވާ</p>
-                
-                <form action="library.html">
-                    <div style="text-align: right;">
-                        <label style="font-size: 14px; font-weight: bold;">ޔޫސަރ ނޭމް:</label>
-                        <input type="text" placeholder="ނަން ޖައްސަވާ..." required>
-                    </div>
-                    
-                    <div style="text-align: right; margin-top: 10px;">
-                        <label style="font-size: 14px; font-weight: bold;">ޕާސްވޯޑް:</label>
-                        <input type="password" placeholder="******" required>
-                    </div>
-                    
-                    <button type="submit" class="login-btn">ވަދެވަޑައިގަތުމަށް</button>
-                    
-                    <div style="margin-top: 20px; font-size: 14px; text-align: center;">
-                        <a href="#" style="color: #0b3d29;">ޕާސްވޯޑް ހަނދާންނެތުނީ؟</a>
-                        <br><br>
-                        އެކައުންޓެއް ނެތް؟ <a href="#" style="color: #cfaa5e; font-weight: bold;">ރަޖިސްޓްރީ ވުމަށް</a>
-                    </div>
-                </form>
+            <div class="input-group">
+                <label class="input-label">އައި.ޑީ / ޔޫސަރނޭމް</label>
+                <input type="text" id="username" class="modern-input" placeholder="A123456">
             </div>
 
+            <div class="input-group">
+                <label class="input-label">ޕާސްވޯޑް</label>
+                <input type="password" id="password" class="modern-input" placeholder="********">
+            </div>
+
+            <button type="button" onclick="loginNow()" class="btn-login-modern">ވަދެވަޑައިގަންނަވާ</button>
+            
+            <p id="error-msg" style="color: red; display: none; margin-top: 10px;">މަޢުލޫމާތު ފުރިހަމަ ކުރައްވާ!</p>
         </div>
     </section>
 
-    <footer>
-        <div class="container" style="text-align: center;">
-            <p>&copy; 2025 Zaad Academy.</p>
-        </div>
-    </footer>
+    <script>
+        function loginNow() {
+            var user = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+
+            // Check if empty
+            if(user === "" || pass === "") {
+                document.getElementById("error-msg").style.display = "block";
+                return;
+            }
+
+            // Save Login Status
+            localStorage.setItem("isStudentLoggedIn", "yes");
+
+            // Show success and redirect
+            alert("ލޮގިން ކާމިޔާބު! ޑޭޝްބޯޑަށް ވަންނަނީ...");
+            window.location.href = "dashboard.html"; 
+        }
+    </script>
 
 </body>
 </html>

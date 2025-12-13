@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="dv" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ކޯހުގެ ތަފްސީލު - ޒާދް އެކަޑެމީ</title>
+<style>
+    /* --- ފޮންޓް ސެޓިންގްސް --- */
+    @font-face {
+        font-family: 'Mv Galan';
+        src: url('Mv Galan.ttf') format('truetype');
+    }
+
+    /* --- މައިގަނޑު ސްޓައިލް --- */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Mv Galan', 'Faruma', sans-serif;
+        background-color: #f4f7f6;
+        color: #333;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* --- 1. ހެޑަރ (ލޯގޯ އާއި ނަން) --- */
+    header {
+        background-color: #ffffff;
+        padding: 15px 50px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-bottom: 3px solid #ffbf00; /* ރަން ކުލައިގެ ބޯޑަރެއް */
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .logo-placeholder {
+        width: 50px;
+        height: 50px;
+        background-color: #004d40; /* ލޯގޯ އިންނާނެ ތަން */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .brand-name {
+        font-size: 24px;
+        color: #004d40;
+        font-weight: bold;
+    }
+
+    /* --- 2. މެއިން ކޮންޓެންޓް (ކާޑު) --- */
+    .main-content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 50px 20px;
+    }
+
+    .course-card {
+        background: #ffffff;
+        width: 800px;
+        max-width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0,77,64,0.1);
+        overflow: hidden;
+        border: 1px solid #eef2f5;
+        position: relative;
+    }
+
+    /* ކާޑުގެ މަތީ ބައި (Banner) */
+    .card-header {
+        background: linear-gradient(135deg, #004d40 0%, #00695c 100%);
+        padding: 40px;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+    .card-header h1 {
+        margin: 0;
+        font-size: 36px;
+        color: #ffbf00; /* ކޯހުގެ ނަން ރަންކުލައިން */
+        text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .card-header p {
+        margin-top: 10px;
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    /* ކާޑުގެ މެދު (Details) */
+    .card-body {
+        padding: 40px;
+    }
+
+    /* އިންފޮމޭޝަން ގްރިޑް */
+    .info-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .info-box {
+        background-color: #f9fbfd;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 20px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .info-box:hover {
+        border-color: #ffbf00; /* މައުސް ގެންދިޔާމަ ރަން ކުލަ */
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    /* ކަނާތް ފަރާތުގައި އިންނަ ރޮނގު */
+    .info-box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 5px;
+        background-color: #004d40;
+    }
+
+    .info-title {
+        color: #004d40;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .bracket-content {
+        font-size: 16px;
+        color: #555;
+        background-color: #fff;
+        padding: 8px 15px;
+        border-radius: 6px;
+        border: 1px dashed #ccc; /* ބްރެކެޓް ފާހަގަކުރުމަށް */
+        display: inline-block;
+        margin-top: 5px;
+        width: 90%;
+    }
+
+    /* --- 3. ކާޑުގެ ތިރި (Contact Footer) --- */
+    .card-footer {
+        background-color: #004d40;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contact-text {
+        font-size: 16px;
+        opacity: 0.9;
+    }
+
+    .phone-number {
+        background-color: #ffbf00;
+        color: #004d40;
+        padding: 10px 30px;
+        border-radius: 50px;
+        font-size: 22px;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        transition: transform 0.2s;
+    }
+
+    .phone-number:hover {
+        transform: scale(1.05);
+        background-color: #ffd54f;
+    }
+
+    /* ރެސްޕޮންސިވް */
+    @media (max-width: 600px) {
+        .card-header h1 { font-size: 28px; }
+        .phone-number { font-size: 18px; }
+        header { padding: 15px 20px; }
+    }
+
+</style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-placeholder">Z</div> 
+        <div class="brand-name">ޒާދް އެކަޑެމީ</div>
+    </header>
+
+    <main class="main-content">
+        <div class="course-card">
+            
+            <div class="card-header">
+                <h1>[ކޯހުގެ ނަން މިތަނަށް ލިޔުއްވާ]</h1>
+                <p>ކޯހާ ގުޅޭ ކުރު ތަޢާރަފެއް މިތާ ލިޔުއްވާ...</p>
+            </div>
+
+            <div class="card-body">
+                <div class="info-grid">
+                    
+                    <div class="info-box">
+                        <div class="info-title">🎓 ކޯހަށް ހޮވުމުގެ ޝަރުޠު</div>
+                        <div class="bracket-content">
+                            [ މިތަނުގައި ޝަރުޠުތައް ލިޔުއްވާ ]
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-title">💰 ކޯހުގެ ފީ</div>
+                        <div class="bracket-content">
+                            [ މިތަނުގައި ފީގެ އަދަދު ލިޔުއްވާ ]
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-title">📅 ކޯސް ފައްޓާ އިންޓޭކް</div>
+                        <div class="bracket-content">
+                            [ މިތަނުގައި ތާރީޚު ލިޔުއްވާ ]
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <div class="contact-text">އިތުރު މަޢުލޫމާތު ހޯއްދެވުމަށް ގުޅުއްވާ:</div>
+                <a href="tel:9901550" class="phone-number">
+                    📞 9901550
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

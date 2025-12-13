@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="dv" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ސްޓޫޑެންޓް ޑޭޝްބޯޑް</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        // If not logged in, go back to login page immediately
+        if (localStorage.getItem("isStudentLoggedIn") !== "yes") {
+            alert("މި ޕޭޖަށް ވަނުމުގެ ހުއްދައެއް ނެތް! ލޮގިން ކުރައްވާ.");
+            window.location.href = "login.html";
+        }
+    </script>
+
+    <style>
+        .dash-container { padding: 40px 0; }
+        .dash-header { background: #fff; padding: 20px; border-bottom: 2px solid #0b3d29; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; }
+        .dash-grid { display: grid; grid-template-columns: 250px 1fr; gap: 30px; }
+        
+        .dash-sidebar { background: #fff; padding: 20px; border-radius: 10px; border: 1px solid #eee; height: fit-content; }
+        .dash-menu-item { display: block; padding: 12px; font-weight: bold; color: #333; border-bottom: 1px solid #eee; }
+        .dash-menu-item:hover { background: #e0f2f1; color: #0b3d29; }
+        
+        .logout-btn { background: #ffebee; color: #c62828; width: 100%; border: none; padding: 10px; margin-top: 20px; cursor: pointer; border-radius: 5px; font-weight: bold; font-family: 'Faruma'; }
+
+        .lesson-card { background: #fff; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px; }
+        .lesson-head { background: #f9f9f9; padding: 15px; border-bottom: 1px solid #ddd; font-weight: bold; color: #0b3d29; }
+        .lesson-body { padding: 20px; }
+        .video-box { background: #000; height: 300px; display: flex; align-items: center; justify-content: center; color: #fff; margin-bottom: 15px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <div class="dash-header">
+        <div class="container">
+            <h2 style="margin:0; color:#0b3d29;">🎓 ދަރިވަރުގެ ޕޯޓަލް</h2>
+            <button onclick="logoutNow()" class="logout-btn" style="width: auto; padding: 5px 20px;">ލޮގްއައުޓް</button>
+        </div>
+    </div>
+
+    <div class="container dash-container">
+        <div class="dash-grid">
+            
+            <aside class="dash-sidebar">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <div style="width: 60px; height: 60px; background: #cfaa5e; border-radius: 50%; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; font-size: 24px;">👤</div>
+                    <strong>އަޙްމަދު (A1023)</strong>
+                </div>
+                <a href="#" class="dash-menu-item">📚 ފިލާވަޅުތައް</a>
+                <a href="#" class="dash-menu-item">📝 އެސައިންމަންޓް</a>
+                <a href="#" class="dash-menu-item">📊 ނަތީޖާ</a>
+                <button onclick="logoutNow()" class="logout-btn">🚪 ސިސްޓަމުން ނުކުތުން</button>
+            </aside>
+
+            <main>
+                <h3 style="margin-top: 0; border-bottom: 2px solid #cfaa5e; padding-bottom: 10px;">އެންމެ ފަހުގެ ފިލާވަޅުތައް</h3>
+
+                <div class="lesson-card">
+                    <div class="lesson-head">ފިލާވަޅު 1: ޤުރްއާނުގެ ޢިލްމުތައް (10 ޑިސެމްބަރު 2025)</div>
+                    <div class="lesson-body">
+                        <p>މިއަދުގެ ކްލާހުގެ ރެކޯޑިންގ:</p>
+                        <div class="video-box">▶️ ވީޑިއޯ ޕްލޭޔަރ (މިތަނަށް ވީޑިއޯ ލިންކް ލެވޭނެ)</div>
+                        <a href="#" style="color: #0b3d29; font-weight: bold;">📄 ލެކްޗަރ ނޯޓްސް ޑައުންލޯޑް (PDF)</a>
+                    </div>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-head">ފިލާވަޅު 2: ޢަރަބި ބަހުގެ ޤަވާޢިދު (08 ޑިސެމްބަރު 2025)</div>
+                    <div class="lesson-body">
+                        <p>ވީޑިއޯ ރެކޯޑިންގ:</p>
+                        <div class="video-box">▶️ ވީޑިއޯ ޕްލޭޔަރ</div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <script>
+        function logoutNow() {
+            // Clear login status
+            localStorage.removeItem("isStudentLoggedIn");
+            // Go back to login
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+</html>

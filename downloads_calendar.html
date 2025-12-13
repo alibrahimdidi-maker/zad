@@ -2,87 +2,232 @@
 <html lang="dv" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>އެކަޑެމިކް ކަލަންޑަރ - ޒާދް އެކަޑެމީ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>އެކަޑެމިކް ކަލަންޑަރު - ޒާދް އެކަޑެމީ</title>
     <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Table Container for Mobile Scrolling */
+        .table-responsive {
+            overflow-x: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            background: #fff;
+        }
+
+        /* Modern Table Design */
+        .modern-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            font-family: 'Faruma', 'Amiri', Arial, sans-serif;
+            font-size: 16px;
+            min-width: 600px; /* Ensures layout doesn't break on small phones */
+        }
+
+        .modern-table thead tr {
+            background-color: #0b3d29; /* Primary Green */
+            color: #ffffff;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .modern-table th, 
+        .modern-table td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .modern-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+            transition: 0.2s;
+        }
+
+        .modern-table tbody tr:nth-of-type(even) {
+            background-color: #f9f9f9;
+        }
+
+        .modern-table tbody tr:hover {
+            background-color: #e0f2f1;
+            color: #0b3d29;
+        }
+
+        .modern-table tbody tr:last-of-type {
+            border-bottom: 3px solid #0b3d29;
+        }
+
+        /* Status Badges */
+        .status-tag {
+            padding: 6px 12px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .status-class { background: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
+        .status-break { background: #fff3e0; color: #ef6c00; border: 1px solid #ffe0b2; }
+        .status-exam { background: #ffebee; color: #c62828; border: 1px solid #ffcdd2; }
+        .status-revision { background: #e3f2fd; color: #1565c0; border: 1px solid #bbdefb; }
+
+        /* Download Button Area */
+        .download-area {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px dashed #ccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @media (max-width: 600px) {
+            .download-area { flex-direction: column; gap: 10px; text-align: center; }
+        }
+    </style>
 </head>
 <body>
-    <div class="top-bar"><div class="container top-inner"><div class="contact-info"><span>📞 9901550</span></div><a href="login.html" class="top-login-btn">ލޮގިން</a></div></div>
-    <header class="main-header"><div class="container header-content"><a href="index.html"><img src="images/logo.png" alt="Logo" class="academy-logo"></a><h1 class="academy-title">ޒާދް އެކަޑެމީ</h1></div></header>
-    <nav class="main-nav"><div class="container"><ul class="top-level-menu"><li class="menu-item"><a href="index.html" class="menu-link">އަނބުރާ ދިއުމަށް</a></li></ul></div></nav>
+
+    <div class="top-bar">
+        <div class="container top-inner">
+            <div class="contact-info"><span>📞 9901550</span></div>
+            <a href="index.html" style="color:#fff;">ހޯމް</a>
+        </div>
+    </div>
 
     <section class="course-hero">
         <div class="container">
-            <span class="course-breadcrumb">ހޯމް > ޑައުންލޯޑްސް > ކަލަންޑަރ</span>
-            <h1>އެކަޑެމިކް ކަލަންޑަރ 2025</h1>
-            <p>ޒާދް އެކަޑެމީގެ 2025 ވަނަ އަހަރުގެ ކިޔެވުމާއި ޗުއްޓީ އަދި އިމްތިޙާނުތައް އޮންނާނެ ތާރީޚުތައް.</p>
+            <h1>އެކަޑެމިކް ކަލަންޑަރު 2025</h1>
+            <p>15 ހަފްތާގެ ކިޔެވުމުގެ ތާވަލު</p>
         </div>
     </section>
 
     <section class="section">
-        <div class="container course-layout">
+        <div class="container">
             
-            <div class="course-content">
-                
-                <div class="download-box">
-                    <div style="display:flex; align-items:center;">
-                        <div class="dl-icon">📅</div>
-                        <div class="dl-info">
-                            <h3>2025 ގެ ކަލަންޑަރު ޑައުންލޯޑް ކުރައްވާ</h3>
-                            <p>ފައިލް ސައިޒް: 2.5 MB (PDF)</p>
-                        </div>
-                    </div>
-                    <a href="#" class="btn" style="margin:0;">ޑައުންލޯޑް</a>
+            <div class="download-area">
+                <div>
+                    <h3 style="margin: 0; color: #0b3d29;">📅 ސެމިސްޓަރ 1 ގެ ތާވަލު</h3>
+                    <p style="margin: 5px 0 0; font-size: 14px; color: #666;">(ޖަނަވަރީ - މެއި 2025)</p>
                 </div>
+                <a href="downloads/calendar.pdf" download class="btn">⬇️ PDF ޑައުންލޯޑް</a>
+            </div>
 
-                <h3 class="course-heading">މުހިންމު ތާރީޚުތައް</h3>
-                
-                <table class="styled-table">
+            <div class="table-responsive">
+                <table class="modern-table">
                     <thead>
                         <tr>
-                            <th>ތާރީޚް</th>
-                            <th>ޙަރަކާތް / އިވެންޓް</th>
-                            <th>ތަފްޞީލު</th>
+                            <th width="10%">ހަފްތާ</th>
+                            <th width="25%">ތާރީޚް</th>
+                            <th width="45%">ހަރަކާތްތައް / މައުޟޫޢު</th>
+                            <th width="20%">ސްޓޭޓަސް</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>15 ޖެނުއަރީ 2025</td>
-                            <td>ފުރަތަމަ ޓާމް ފެށުން</td>
-                            <td>ކިޔެވުން ފެށޭ ދުވަސް</td>
+                            <td>1</td>
+                            <td>12 ޖަނަވަރީ - 16 ޖަނަވަރީ</td>
+                            <td>ކިޔެވުން ފެށުން & އޮރިއެންޓޭޝަން</td>
+                            <td><span class="status-tag status-class">ކިޔެވުން</span></td>
                         </tr>
                         <tr>
-                            <td>10 މާރިޗު 2025</td>
-                            <td>މިޑް-ޓާމް ބަންދު</td>
-                            <td>1 ހަފްތާގެ ޗުއްޓީ</td>
+                            <td>2</td>
+                            <td>19 ޖަނަވަރީ - 23 ޖަނަވަރީ</td>
+                            <td>ފިލާވަޅު 1 & 2</td>
+                            <td><span class="status-tag status-class">ކިޔެވުން</span></td>
                         </tr>
                         <tr>
-                            <td>01 ޖޫން 2025</td>
-                            <td>ފުރަތަމަ ޓާމް އިމްތިޙާނު</td>
-                            <td>ހުރިހާ ކޯހެއްގެ ފައިނަލް އެގްޒާމް</td>
+                            <td>3</td>
+                            <td>26 ޖަނަވަރީ - 30 ޖަނަވަރީ</td>
+                            <td>ފިލާވަޅު 3 (އެސައިންމަންޓް 1 ހަވާލުކުރުން)</td>
+                            <td><span class="status-tag status-class">ކިޔެވުން</span></td>
                         </tr>
                         <tr>
-                            <td>15 ޖުލައި 2025</td>
-                            <td>ދެވަނަ ޓާމް ފެށުން</td>
-                            <td>ދެވަނަ ސެމިސްޓަރ ފެށޭ ދުވަސް</td>
+                            <td>4</td>
+                            <td>2 ފެބްރުއަރީ - 6 ފެބްރުއަރީ</td>
+                            <td>ފިލާވަޅު 4</td>
+                            <td><span class="status-tag status-class">ކިޔެވުން</span></td>
                         </tr>
                         <tr>
-                            <td>10 ޑިސެމްބަރު 2025</td>
-                            <td>ދަސްވެނިވުމުގެ ޙަފްލާ</td>
-                            <td>އެހެނިހެން ހަރަކާތްތަކާއެކު</td>
+                            <td>5</td>
+                            <td>9 ފެބްރުއަރީ - 13 ފެބްރުއަރީ</td>
+                            <td>ފިލާވަޅު 5</td>
+                            <td><span class="status-tag status-class">ކިޔެވުން</span></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>16 ފެބްރުއަރީ - 20 ފެބްރުއަރީ</td>
+                            <td>ފިލާވަޅު 6 (އެސައިންމަންޓް 1 ހުށަހެޅުން)</td>
+                            <td><span class="status-tag status-class">ކިޔެވުން</span></td>
+                        </tr>
+                        
+                        <tr style="background-color: #fff8e1;">
+                            <td>-</td>
+                            <td>23 ފެބްރުއަރީ - 27 ފެބްރުއަރީ</td>
+                            <td><strong>މިޑް ޓާމް ބަންދު</strong></td>
+                            <td><span class="status-tag status-break">ޗުއްޓީ</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td>2 މާރިޗު - 6 މާރިޗު</td>
+                            <td>ފިލާވަޅު 7</td>
+                            <td><span class="status-tag status-class">ކިޔެވުން</span></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9 މާރިޗު - 13 މާރިޗު</td>
+                            <td>ފިލާވަޅު 8</td>
+                            <td><span class="status-tag status-class">ކިޔެވުން</span></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>16 މާރިޗު - 20 މާރިޗު</td>
+                            <td>ފިލާވަޅު 9 (އެސައިންމަންޓް 2 ހަވާލުކުރުން)</td>
+                            <td><span class="status-tag status-class">ކިޔެވުން</span></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>23 މާރިޗު - 27 މާރިޗު</td>
+                            <td>ފިލާވަޅު 10 (ރަމަޟާން މަސް ފެށުން)</td>
+                            <td><span class="status-tag status-class">ކިޔެވުން</span></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>30 މާރިޗު - 3 އޭޕްރީލް</td>
+                            <td>ފިލާވަޅު 11</td>
+                            <td><span class="status-tag status-class">ކިޔެވުން</span></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>6 އޭޕްރީލް - 10 އޭޕްރީލް</td>
+                            <td>ފިލާވަޅު 12 (އެސައިންމަންޓް 2 ހުށަހެޅުން)</td>
+                            <td><span class="status-tag status-class">ކިޔެވުން</span></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>13 އޭޕްރީލް - 17 އޭޕްރީލް</td>
+                            <td>ފިލާވަޅު 13</td>
+                            <td><span class="status-tag status-class">ކިޔެވުން</span></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>20 އޭޕްރީލް - 24 އޭޕްރީލް</td>
+                            <td>ރިވީޝަން ހަފްތާ</td>
+                            <td><span class="status-tag status-revision">ރިވީޝަން</span></td>
+                        </tr>
+                        
+                        <tr style="background-color: #ffebee;">
+                            <td>15</td>
+                            <td>27 އޭޕްރީލް - 1 މެއި</td>
+                            <td><strong>ފައިނަލް އިމްތިޙާން</strong></td>
+                            <td><span class="status-tag status-exam">އިމްތިޙާން</span></td>
                         </tr>
                     </tbody>
                 </table>
-
             </div>
-
-            <aside class="course-sidebar">
-                <div class="contact-box">
-                    <h4 style="color: #0b3d29;">ސުވާލެއް އޮތްތޯ؟</h4>
-                    <p style="font-size: 14px; margin-bottom: 10px;">ކަލަންޑަރާ ގުޅޭގޮތުން އިތުރު މަޢުލޫމާތު ހޯއްދެވުމަށް:</p>
-                    <p style="font-size: 14px;">📞 9901550</p>
-                </div>
-            </aside>
-
+            
+            <p style="margin-top: 20px; font-size: 13px; color: #777;">* ނޯޓް: މިއީ ވަގުތީ ތާވަލެކެވެ. ހަނދުބެލުމާއި ގުޅިގެން ތާރީޚުތަކަށް ބަދަލު އައުމަކީ އެކަށީގެންވާ ކަމެކެވެ.</p>
         </div>
     </section>
 
